@@ -43,3 +43,25 @@
   .memory-card:nth-child(3){grid-column:1; max-width:100%;}
   .memory-card:nth-child(3) img.photo-full{height:auto; max-height:520px; object-fit:contain;}
 }
+
+/* Ajuste visible y prioritario para la tercera tarjeta */
+.gallery > .memory-card:nth-child(3) {
+  grid-column: 1 / -1 !important;
+  width: min(100%, 900px) !important;
+  justify-self: center !important;
+  transform: none !important;
+}
+.gallery > .memory-card:nth-child(3) > img.photo-full {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 620px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #fff7f3 !important;
+}
+@media (max-width: 640px) {
+  .gallery > .memory-card:nth-child(3) { grid-column: 1 !important; }
+  .gallery > .memory-card:nth-child(3) > img.photo-full {
+    max-height: 520px !important;
+  }
+}
