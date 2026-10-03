@@ -34,3 +34,12 @@
 /* Mostrar completa la tercera foto del álbum */
 .memory-card img.photo-full{object-fit:contain;background:#fff7f3;height:320px}
 @media(max-width:640px){.memory-card img.photo-full{height:350px;object-fit:contain}}
+
+
+/* Tarjeta más amplia para la tercera foto */
+.memory-card:nth-child(3){grid-column:1 / -1; width:100%; max-width:850px; justify-self:center;}
+.memory-card:nth-child(3) img.photo-full{width:100%; height:clamp(360px, 55vw, 560px); object-fit:contain; object-position:center; background:#fff7f3;}
+@media(max-width:640px){
+  .memory-card:nth-child(3){grid-column:1; max-width:100%;}
+  .memory-card:nth-child(3) img.photo-full{height:auto; max-height:520px; object-fit:contain;}
+}
