@@ -30,3 +30,7 @@
 
 /* Presentación del poema para mamá */
 .letter .poem-line{margin:22px 0;text-align:center;line-height:1.9;color:var(--muted)}.letter .poem-emphasis{text-align:center;color:var(--rose-dark);font-size:1.3rem;font-style:italic;margin:26px 0}.letter .signature{text-align:center}
+
+/* Mostrar completa la tercera foto del álbum */
+.memory-card img.photo-full{object-fit:contain;background:#fff7f3;height:320px}
+@media(max-width:640px){.memory-card img.photo-full{height:350px;object-fit:contain}}
