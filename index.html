@@ -66,11 +66,33 @@
         <p>Gracias por formar parte de mi historia, por los momentos compartidos y por todas esas pequeñas cosas que, aunque a veces no diga, también guardo en el corazón.</p>
         <p>Deseo que este nuevo año de tu vida te traiga tranquilidad, salud, risas, amor y muchas razones para sentirte orgullosa y feliz. Mereces momentos bonitos, hoy y todos los días.</p>
         <p class="signature">Te quiero muchísimo, mamá. 💗<br><span>Con todo mi amor, Gabi</span></p>
-        <button class="button surprise-button" id="surprise">Pulsa aquí para una sorpresa ✨</button>
-        <p id="surprise-message" class="surprise-message" hidden>¡Hoy y siempre eres una persona muy especial! Que la vida te abrace bonito. 🌷💖</p>
+        <button class="button surprise-button" id="surprise">Revelar sorpresa ✨</button>
       </div>
     </section>
   </main>
+  <div class="surprise-overlay" id="surprise-overlay" aria-hidden="true">
+    <div class="surprise-card" role="dialog" aria-modal="true" aria-labelledby="surprise-title">
+      <button class="close-surprise" id="close-surprise" aria-label="Cerrar sorpresa">×</button>
+      <div class="surprise-garland" aria-hidden="true">🌷 ✨ 🌸 ✨ 🌷</div>
+      <p class="eyebrow">UN REGALITO PARA TI</p>
+      <h2 id="surprise-title">¡Feliz cumpleaños, mamá! 💗</h2>
+      <div class="birthday-scene" aria-hidden="true">
+        <div class="floating-flower flower-one">🌸</div>
+        <div class="floating-flower flower-two">🌷</div>
+        <div class="cake">
+          <div class="cake-candle"><span></span></div>
+          <div class="cake-top"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+      <p class="surprise-words">Pide un deseo, cierra los ojitos un momento y recuerda cuánto te quiero.</p>
+      <p class="surprise-small">Que este nuevo año te traiga flores, abrazos, salud y muchos motivos para sonreír. 🌷</p>
+      <button class="button" id="wish-button">¡Te mando un abrazo gigante! 💞</button>
+      <p class="wish-reply" id="wish-reply" hidden>Este abrazo viene cargadito de besos, flores y todo mi amor. <strong>Te quiero, mamá.</strong> — Gabi 💗</p>
+    </div>
+  </div>
   <footer>Hecho con amor para mamá · Siempre en mi corazón ♡</footer>
   <script src="script.js"></script>
 </body>
