@@ -27,3 +27,6 @@
 @keyframes flame{from{transform:rotate(-8deg) scale(.92)}to{transform:rotate(8deg) scale(1.08)}}
 @keyframes flower-float{from{transform:translateY(5px) rotate(-8deg)}to{transform:translateY(-12px) rotate(8deg)}}
 @media(max-width:420px){.surprise-card{padding:28px 17px}.birthday-scene{height:210px}.cake{transform:scale(.88)}.flower-one{left:0}.flower-two{right:0}}
+
+/* Presentación del poema para mamá */
+.letter .poem-line{margin:22px 0;text-align:center;line-height:1.9;color:var(--muted)}.letter .poem-emphasis{text-align:center;color:var(--rose-dark);font-size:1.3rem;font-style:italic;margin:26px 0}.letter .signature{text-align:center}
